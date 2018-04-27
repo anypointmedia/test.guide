@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  redis:
+    image: redis:4
+    ports:
+      - 26379:6379
+  mysql:
+    image: mysql:5
+    ports:
+      - 23306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: anypointmedia
+      MYSQL_USER: anypoint
+      MYSQL_PASSWORD: media
+      MYSQL_DATABASE: apmdb

@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  test_redis:
+    image: redis:4
+  test_mysql:
+    image: mysql:5
+    environment:
+      MYSQL_ROOT_PASSWORD: anypointmedia
+      MYSQL_USER: anypoint
+      MYSQL_PASSWORD: media
+      MYSQL_DATABASE: apmdb
